@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+    <!-- style links -->
+	<link rel = "icon" href="../images/FIDE.png">
+	<link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- Google Fonts Links -->
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Trirong Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap" rel="stylesheet">
+
+    <title>Candidates Tournament 2022</title>
+
+	<!-- Slicknav -->
+	<link rel="stylesheet" href="../styles/slicknav.css">
+
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- local js slicknav script file -->
+	<script src="../js/jquery.slicknav.min.js"></script>
+	
+	<!-- slicknav script -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/whiteFIDE.jpg"></a>
+        <h1>FIDE Candidates Tournament 2022</h1>
+
+        <nav>
+            <div class="nav-item">
+                <a href="event_info.html">Event Information</a>
+            </div>
+            <div class="nav-item">
+                <a href="participants.html">Participants</a>
+            </div>
+            <div class="nav-item">
+                <a href="past_years.html">Past Years</a>
+            </div>
+            <div class="nav-item">
+                <a href="world_championship.html">World Chess Championship</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Cesar Carranza Productions</p>
+        <div class="links">
+            <a href="https://www.youtube.com/c/fidechannel" target="_blank"><h3>YOUTUBE</h3></a>
+            <a href="https://www.instagram.com/fide_chess/" target="_blank"><h3>INSTAGRAM</h3></a>
+            <a href="https://www.flickr.com/people/fide/" target="_blank"><h3>FLICKR</h3></a>
+            <a href="https://twitter.com/FIDE_chess" target="_blank"><h3>TWITTER</h3></a>
+            <a href="https://www.facebook.com/ChessFIDE/" target="_blank"><h3>FACEBOOK</h3></a>
+        </div>
+        <div>
+            <img src="images/whiteFIDE.jpg" alt="">
+            <p>FIDE WORLD CHAMPIONSHIP</p>
+            <a href="https://www.fide.com/contacts" target="_blank"><h4>Contact Us</h4></a>
+        </div>
+    </footer>
+
+    <!-- Javascript - Scripts -->
+    <script>
+		window.onload = function() {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+	</script>
+</body>
+</html>

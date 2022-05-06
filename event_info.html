@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+    <!-- style links -->
+    <link rel = "icon" href="../images/FIDE.png">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/event_info.css">
+
+    <!-- Google Fonts Links -->
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Trirong Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap" rel="stylesheet">
+
+    <title>Candidates Tournament 2022</title>
+
+	<!-- Slicknav -->
+	<link rel="stylesheet" href="../styles/slicknav.css">
+
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- local js slicknav script file -->
+	<script src="../js/jquery.slicknav.min.js"></script>
+	
+	<!-- slicknav script -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/whiteFIDE.jpg"></a>
+        <h1>FIDE Candidates Tournament 2022</h1>
+
+        <nav>
+            <div class="nav-item">
+                <a href="event_info.html">Event Information</a>
+            </div>
+            <div class="nav-item">
+                <a href="participants.html">Participants</a>
+            </div>
+            <div class="nav-item">
+                <a href="past_years.html">Past Years</a>
+            </div>
+            <div class="nav-item">
+                <a href="world_championship.html">World Chess Championship</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+      <aside id="navbar">
+          <a href="#venue"><div class="square" id="square1"></div></a>
+          <div class="line"></div>
+          <a href="#games"><div class="square" id="square2"></div></a>
+          <div class="line"></div>
+          <a href="#bracket"><div class="square" id="square3"></div></a>
+      </aside>
+
+        <div class="banner">
+            <img src="images/santona1.png" id="banner_left" alt="Banner">
+            <div>
+                <h1>THE EVENT</h1>
+            </div>
+            <img src="images/santona2.png" id="banner_right" alt="Banner">
+        </div>
+
+
+        <section>
+            <h1 id="venue">VENUE</h1>
+            <div>
+                <h2 class="subtitle">PALACE OF SANTOÑA, MADRID</h2>
+                <img src="images/santona_palace2.jpg" class="vertical_img">
+                <p>The Palace of Santoña is a historical building located in the urban center of Madrid, Spain; which stands out thanks to its artistical value, as well as its multiple rooms suited to hold a great variety of events.</p>
+            </div>
+
+            <h1 id="games">GAMES</h1>
+            <div>
+                <p>The time control is 100 minutes for the first 40 moves, 50 minutes for the next 20 moves, and then 15 minutes for the rest of the game, plus a 30-second increment per move starting from move 1.</p>
+                <img src="images/chess_set2.jpeg">
+            </div>
+        </section>
+        <section class="black_section">
+            <div>
+                <img src="images/nepo_liren.jpg">
+                <p>Ties for places other than first are broken by, in order: (1) Sonneborn–Berger score; (2) total number of wins; (3) head-to-head score among tied players; (4) drawing of lots.</p>
+            </div>
+
+            <div>
+                <p>The prize money is €48,000 for first place, €36,000 for second place, and €24,000 for third place (with players on the same number of points sharing prize money, irrespective of tie-breaks), plus €7,000 per point for every player, a total prize pool of €500,000.</p>
+                <img src="images/caruanacandidates_0.jpg">
+            </div>
+        </section>
+        <section class="bracket_section">
+            <h1 id="bracket">BRACKET</h1>
+            <div class="bracket">
+                <div class="round" id="round"></div>
+                <div class="white0" id="white0">White</div>
+                <div class="black0" id="black0">Black</div>
+                <div class="result0" id="result0">Result</div>
+                <div class="white1" id="white1"></div>
+                <div class="black1" id="black1"></div>
+                <div class="result1" id="result1">-</div>
+                <div class="white2" id="white2"></div>
+                <div class="black2" id="black2"></div>
+                <div class="result2" id="result2">-</div>
+                <div class="white3" id="white3"></div>
+                <div class="black3" id="black3"></div>
+                <div class="result3" id="result3">-</div>
+                <div class="white4" id="white4"></div>
+                <div class="black4" id="black4"></div>
+                <div class="result4" id="result4">-</div>
+                <div class="larrow" onclick="plusSlides(-1)">&#10094;</div>
+                <div class="rarrow" onclick="plusSlides(1)">&#10095;</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Cesar Carranza Productions</p>
+        <div class="links">
+            <a href="https://www.youtube.com/c/fidechannel" target="_blank"><h3>YOUTUBE</h3></a>
+            <a href="https://www.instagram.com/fide_chess/" target="_blank"><h3>INSTAGRAM</h3></a>
+            <a href="https://www.flickr.com/people/fide/" target="_blank"><h3>FLICKR</h3></a>
+            <a href="https://twitter.com/FIDE_chess" target="_blank"><h3>TWITTER</h3></a>
+            <a href="https://www.facebook.com/ChessFIDE/" target="_blank"><h3>FACEBOOK</h3></a>
+        </div>
+        <div>
+            <img src="images/whiteFIDE.jpg" alt="">
+            <p>FIDE WORLD CHAMPIONSHIP</p>
+            <a href="https://www.fide.com/contacts" target="_blank"><h4>Contact Us</h4></a>
+        </div>
+    </footer>
+
+    <!-- Javascript - Scripts -->
+    <script>
+		window.onload = function() {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+	</script>
+
+    <!-- Bracket Script -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          if (n > 14) {slideIndex = 14}    
+          if (n < 1) {slideIndex = 1}
+          console.log(slideIndex)
+
+          if (slideIndex == 1) {
+              document.getElementById("round").innerHTML = "Round 1 – 17 June 2022";
+              document.getElementById("white1").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("black1").innerHTML = "Richárd Rapport";
+              document.getElementById("white2").innerHTML = "Ding Liren";
+              document.getElementById("black2").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("white3").innerHTML = "Fabiano Caruana";
+              document.getElementById("black3").innerHTML = "Hikaru Nakamura";
+              document.getElementById("white4").innerHTML = "Teimour Radjabov";
+              document.getElementById("black4").innerHTML = "Alireza Firouzja";
+            }
+          if (slideIndex == 2) {
+              document.getElementById("round").innerHTML = "Round 2 – 18 June 2022";
+              document.getElementById("white1").innerHTML = "Richárd Rapport";
+              document.getElementById("black1").innerHTML = "Alireza Firouzja";
+              document.getElementById("white2").innerHTML = "Hikaru Nakamura";
+              document.getElementById("black2").innerHTML = "Teimour Radjabov";
+              document.getElementById("white3").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("black3").innerHTML = "Fabiano Caruana";
+              document.getElementById("white4").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("black4").innerHTML = "Ding Liren";
+            }
+          if (slideIndex == 3) {
+              document.getElementById("round").innerHTML = "Round 3 – 19 June 2022";
+              document.getElementById("white1").innerHTML = "Ding Liren";
+              document.getElementById("black1").innerHTML = "Richárd Rapport";
+              document.getElementById("white2").innerHTML = "Fabiano Caruana";
+              document.getElementById("black2").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("white3").innerHTML = "Teimour Radjabov";
+              document.getElementById("black3").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("white4").innerHTML = "Alireza Firouzja";
+              document.getElementById("black4").innerHTML = "Hikaru Nakamura";
+            }
+          if (slideIndex == 4) {
+              document.getElementById("round").innerHTML = "Round 4 – 21 June 2022";
+              document.getElementById("white1").innerHTML = "Richárd Rapport";
+              document.getElementById("black1").innerHTML = "Hikaru Nakamura";
+              document.getElementById("white2").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("black2").innerHTML = "Alireza Firouzja";
+              document.getElementById("white3").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("black3").innerHTML = "Teimour Radjabov";
+              document.getElementById("white4").innerHTML = "Ding Liren";
+              document.getElementById("black4").innerHTML = "Fabiano Caruana";
+            }
+          if (slideIndex == 5) {
+              document.getElementById("round").innerHTML = "Round 5 – 22 June 2022";
+              document.getElementById("white1").innerHTML = "Fabiano Caruana";
+              document.getElementById("black1").innerHTML = "Richárd Rapport";
+              document.getElementById("white2").innerHTML = "Teimour Radjabov";
+              document.getElementById("black2").innerHTML = "Ding Liren";
+              document.getElementById("white3").innerHTML = "Alireza Firouzja";
+              document.getElementById("black3").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("white4").innerHTML = "Hikaru Nakamura";
+              document.getElementById("black4").innerHTML = "Ian Nepomniachtchi	";
+            }
+          if (slideIndex == 6) {
+              document.getElementById("round").innerHTML = "Round 6 – 23 June 2022";
+              document.getElementById("white1").innerHTML = "Teimour Radjabov";
+              document.getElementById("black1").innerHTML = "Richárd Rapport";
+              document.getElementById("white2").innerHTML = "Alireza Firouzja";
+              document.getElementById("black2").innerHTML = "Fabiano Caruana";
+              document.getElementById("white3").innerHTML = "Hikaru Nakamura";
+              document.getElementById("black3").innerHTML = "Ding Liren";
+              document.getElementById("white4").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("black4").innerHTML = "Jan-Krzysztof Duda";
+            }
+          if (slideIndex == 7) {
+              document.getElementById("round").innerHTML = "Round 7 – 25 June 2022";
+              document.getElementById("white1").innerHTML = "Richárd Rapport";
+              document.getElementById("black1").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("white2").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("black2").innerHTML = "Hikaru Nakamura";
+              document.getElementById("white3").innerHTML = "Ding Liren";
+              document.getElementById("black3").innerHTML = "Alireza Firouzja";
+              document.getElementById("white4").innerHTML = "Fabiano Caruana";
+              document.getElementById("black4").innerHTML = "Teimour Radjabov";
+            }
+          if (slideIndex == 8) {
+              document.getElementById("round").innerHTML = "Round 8 – 26 June 2022";
+              document.getElementById("black1").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("white1").innerHTML = "Richárd Rapport";
+              document.getElementById("black2").innerHTML = "Ding Liren";
+              document.getElementById("white2").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("black3").innerHTML = "Fabiano Caruana";
+              document.getElementById("white3").innerHTML = "Hikaru Nakamura";
+              document.getElementById("black4").innerHTML = "Teimour Radjabov";
+              document.getElementById("white4").innerHTML = "Alireza Firouzja";
+            }          
+          if (slideIndex == 9) {
+              document.getElementById("round").innerHTML = "Round 9 – 27 June 2022";
+              document.getElementById("black1").innerHTML = "Richárd Rapport";
+              document.getElementById("white1").innerHTML = "Alireza Firouzja";
+              document.getElementById("black2").innerHTML = "Hikaru Nakamura";
+              document.getElementById("white2").innerHTML = "Teimour Radjabov";
+              document.getElementById("black3").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("white3").innerHTML = "Fabiano Caruana";
+              document.getElementById("black4").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("white4").innerHTML = "Ding Liren";
+            }
+          if (slideIndex == 10) {
+              document.getElementById("round").innerHTML = "Round 10 – 29 June 2022";
+              document.getElementById("black1").innerHTML = "Ding Liren";
+              document.getElementById("white1").innerHTML = "Richárd Rapport";
+              document.getElementById("black2").innerHTML = "Fabiano Caruana";
+              document.getElementById("white2").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("black3").innerHTML = "Teimour Radjabov";
+              document.getElementById("white3").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("black4").innerHTML = "Alireza Firouzja";
+              document.getElementById("white4").innerHTML = "Hikaru Nakamura";
+            }
+          if (slideIndex == 11) {
+              document.getElementById("round").innerHTML = "Round 11 – 30 June 2022";
+              document.getElementById("black1").innerHTML = "Richárd Rapport";
+              document.getElementById("white1").innerHTML = "Hikaru Nakamura";
+              document.getElementById("black2").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("white2").innerHTML = "Alireza Firouzja";
+              document.getElementById("black3").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("white3").innerHTML = "Teimour Radjabov";
+              document.getElementById("black4").innerHTML = "Ding Liren";
+              document.getElementById("white4").innerHTML = "Fabiano Caruana";
+            }
+          if (slideIndex == 12) {
+              document.getElementById("round").innerHTML = "Round 12 – 1 July 2022";
+              document.getElementById("black1").innerHTML = "Fabiano Caruana";
+              document.getElementById("white1").innerHTML = "Richárd Rapport";
+              document.getElementById("black2").innerHTML = "Teimour Radjabov";
+              document.getElementById("white2").innerHTML = "Ding Liren";
+              document.getElementById("black3").innerHTML = "Alireza Firouzja";
+              document.getElementById("white3").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("black4").innerHTML = "Hikaru Nakamura";
+              document.getElementById("white4").innerHTML = "Ian Nepomniachtchi	";
+            }
+          if (slideIndex == 13) {
+            document.getElementById("round").innerHTML = "Round 13 – 3 July 2022";
+              document.getElementById("black1").innerHTML = "Richárd Rapport";
+              document.getElementById("white1").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("black2").innerHTML = "Jan-Krzysztof Duda";
+              document.getElementById("white2").innerHTML = "Hikaru Nakamura";
+              document.getElementById("black3").innerHTML = "Ding Liren";
+              document.getElementById("white3").innerHTML = "Alireza Firouzja";
+              document.getElementById("black4").innerHTML = "Fabiano Caruana";
+              document.getElementById("white4").innerHTML = "Teimour Radjabov";
+            }
+          if (slideIndex == 14) {
+              document.getElementById("round").innerHTML = "Round 14 – 4 July 2022";
+              document.getElementById("black1").innerHTML = "Teimour Radjabov";
+              document.getElementById("white1").innerHTML = "Richárd Rapport";
+              document.getElementById("black2").innerHTML = "Alireza Firouzja";
+              document.getElementById("white2").innerHTML = "Fabiano Caruana";
+              document.getElementById("black3").innerHTML = "Hikaru Nakamura";
+              document.getElementById("white3").innerHTML = "Ding Liren";
+              document.getElementById("black4").innerHTML = "Ian Nepomniachtchi";
+              document.getElementById("white4").innerHTML = "Jan-Krzysztof Duda";
+            }
+        }
+    </script>
+
+    <!-- Sidebar Script -->
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+              document.getElementById("navbar").style.display = "flex";
+          } else {
+              document.getElementById("navbar").style.display = "none";
+          }
+
+          if ((document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) && document.documentElement.scrollTop < 1300) {
+              document.getElementById("square1").style.height = "23px";
+              document.getElementById("square1").style.width = "23px";
+          } else {
+              document.getElementById("square1").style.height = "";
+              document.getElementById("square1").style.width = "";
+          }
+
+          if ((document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) && document.documentElement.scrollTop < 3100) {
+              document.getElementById("square2").style.height = "23px";
+              document.getElementById("square2").style.width = "23px";
+
+          } else {
+              document.getElementById("square2").style.height = "";
+              document.getElementById("square2").style.width = "";
+          }
+
+          if (document.body.scrollTop > 3100 || document.documentElement.scrollTop > 3100) {
+              document.getElementById("square3").style.height = "23px";
+              document.getElementById("square3").style.width = "23px";
+          } else {
+              document.getElementById("square3").style.height = "";
+              document.getElementById("square3").style.width = "";
+          }
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+    <!-- style links -->
+	<link rel = "icon" href="../images/FIDE.png">
+	<link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- Google Fonts Links -->
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Trirong Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap" rel="stylesheet">
+
+    <title>Candidates Tournament 2022</title>
+
+	<!-- Slicknav -->
+	<link rel="stylesheet" href="../styles/slicknav.css">
+
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- local js slicknav script file -->
+	<script src="../js/jquery.slicknav.min.js"></script>
+	
+	<!-- slicknav script -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+		});
+	</script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/whiteFIDE.jpg"></a>
+        <h1>FIDE Candidates Tournament 2022</h1>
+
+        <nav>
+            <div class="nav-item">
+                <a href="event_info.html">Event Information</a>
+            </div>
+            <div class="nav-item">
+                <a href="participants.html">Participants</a>
+            </div>
+            <div class="nav-item">
+                <a href="past_years.html">Past Years</a>
+            </div>
+            <div class="nav-item">
+                <a href="world_championship.html">World Chess Championship</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <aside id="navbar">
+            <a href="#intro"><div class="square" id="square1"></div></a>
+            <div class="line"></div>
+            <a href="#event"><div class="square" id="square2"></div></a>
+            <div class="line"></div>
+            <a href="#players_section"><div class="square" id="square3"></div></a>
+            <div class="line"></div>
+            <a href="#organization"><div class="square" id="square4"></div></a>
+            <div class="line"></div>
+            <a href="#news_section"><div class="square" id="square5"></div></a>
+        </aside>
+        
+        <div class="banner">
+            <img src="images/banner1.png" id="banner_left" alt="Banner">
+            <div>
+                <h1>THE TOP AWAITS</h1>
+            </div>
+            <img src="images/banner2.png" id="banner_right" alt="Banner">
+        </div>
+
+        <section>
+            <div class="timer">
+                <h1>COUNTDOWN TO MADRID 2022</h1>
+                <h2 id="demo"></h2>
+            </div>
+
+            <h1 id="intro">GET PREPARED FOR THE MOST IMPORTANT EVENT IN CHESS</h1>
+            <div>
+                <img src="images/four_seasons_hotel.jpg">
+                <p>The 2022 Candidates Tournament is an upcoming eight-player chess tournament, with the winner qualifying for the challenger's spot against the defending champion Magnus Carlsen in the World Chess Championship 2023.<br><br>Here you can learn all about the challengers and the event that will define the world of chess.</p>
+            </div>
+
+            <h1 id="event">THE EVENT</h1>
+            <div>
+                <p>The tournament is an eight-player, double round-robin tournament, meaning there are 14 rounds with each player facing the others twice: once with the black pieces and once with the white pieces.<br><br>The tournament winner qualifies to play Magnus Carlsen, current World Champion, for the World Championship in 2023.</p>
+                <img src="images/carlsen.jpeg" id="carlsen">
+            </div>
+        </section>
+        <section class="black_section">
+            <h1 id="players_section">THE PLAYERS</h1>
+            <div>
+                <img src="images/players.png" id="players">
+                <p>All eight players have qualified as of the completion of pool competition in the FIDE Grand Prix 2022 in March 2022.<br><br>Qualifications were achieved through diverse ways, such as rating, finisher for tournaments like Grand Prix 2022, World Cup 2021 and FIDE direct nomination.</p>
+            </div>
+
+            <h1 id="organization">THE ORGANIZATION</h1>
+            <div>
+                <p>The International Chess Federation (FIDE) is the governing body of the sport of chess, and it regulates all international chess competitions.<br><br>Constituted as a non-governmental institution, it was recognized by the International Olympic Committee as a Global Sporting Organization in 1999.</p>
+                <img src="images/chess_set.jpg" id="organization_img">
+            </div>
+        </section>
+        <section class="news_section">
+            <h1 id="news_section">RELATED NEWS</h1>
+            <div>
+                <div class="news">
+                    <a href="https://www.chess.com/news/view/carlsen-reiterates-uncertainty-of-defending-world-title" target="_blank"><img src="images/carlsen_news.png"></a>
+                    <h3>Carlsen Reiterates Uncertainty Of Defending World Title</h3>
+                    <h4>April 19, 2022</h4>
+                </div>
+                <div class="news">
+                    <a href="https://en.chessbase.com/post/ding-liren-on-his-way-to-the-candidates" target="_blank"><img src="images/liren_news.jpeg"></a>
+                    <h3>Ding Liren on his way to the FIDE Candidates 2022</h3>
+                    <h4>April 11, 2022</h4>
+                </div>
+                <div class="news">
+                    <a href="https://www.chess.com/news/view/sergey-karjakin-banned-for-6-months" target="_blank"><img src="images/karjakin_news.png"></a>
+                    <h3>Karjakin Banned For 6 Months, Misses Out On Candidates</h3>
+                    <h4>March 30, 2022</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Cesar Carranza Productions</p>
+        <div class="links">
+            <a href="https://www.youtube.com/c/fidechannel" target="_blank"><h3>YOUTUBE</h3></a>
+            <a href="https://www.instagram.com/fide_chess/" target="_blank"><h3>INSTAGRAM</h3></a>
+            <a href="https://www.flickr.com/people/fide/" target="_blank"><h3>FLICKR</h3></a>
+            <a href="https://twitter.com/FIDE_chess" target="_blank"><h3>TWITTER</h3></a>
+            <a href="https://www.facebook.com/ChessFIDE/" target="_blank"><h3>FACEBOOK</h3></a>
+        </div>
+        <div>
+            <img src="images/whiteFIDE.jpg" alt="">
+            <p>FIDE WORLD CHAMPIONSHIP</p>
+            <a href="https://www.fide.com/contacts" target="_blank"><h4>Contact Us</h4></a>
+        </div>
+    </footer>
+
+    <!-- Javascript - Scripts -->
+    <!-- Current Year Script -->
+    <script>
+		window.onload = function() {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+	</script>
+
+    <!-- Timer Script -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 17, 2022 00:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+        // Get today's date and time
+        var now = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+            
+        // Time calculations for days, hours, minutes and seconds
+        var days =  ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-2);
+        var hours = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
+        var minutes = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
+        var seconds = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
+            
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + ":" + hours + ":"
+          + minutes + ":" + seconds;
+            
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "WELCOME TO FIDE CANDIDATES 2022";
+        }
+        }, 1000);
+    </script>
+
+    <!-- Sidebar Script -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 870 || document.documentElement.scrollTop > 870) {
+                document.getElementById("navbar").style.display = "flex";
+            } else {
+                document.getElementById("navbar").style.display = "none";
+            }
+
+            if ((document.body.scrollTop > 870 || document.documentElement.scrollTop > 870) && document.documentElement.scrollTop < 1400) {
+                document.getElementById("square1").style.height = "23px";
+                document.getElementById("square1").style.width = "23px";
+            } else {
+                document.getElementById("square1").style.height = "";
+                document.getElementById("square1").style.width = "";
+            }
+
+            if ((document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) && document.documentElement.scrollTop < 2250) {
+                document.getElementById("square2").style.height = "23px";
+                document.getElementById("square2").style.width = "23px";
+
+            } else {
+                document.getElementById("square2").style.height = "";
+                document.getElementById("square2").style.width = "";
+            }
+
+            if ((document.body.scrollTop > 2250 || document.documentElement.scrollTop > 2250) && document.documentElement.scrollTop < 3200) {
+                document.getElementById("square3").style.height = "23px";
+                document.getElementById("square3").style.width = "23px";
+            } else {
+                document.getElementById("square3").style.height = "";
+                document.getElementById("square3").style.width = "";
+            }
+
+            if ((document.body.scrollTop > 3200 || document.documentElement.scrollTop > 3200) && document.documentElement.scrollTop < 4000) {
+                document.getElementById("square4").style.height = "23px";
+                document.getElementById("square4").style.width = "23px";
+            } else {
+                document.getElementById("square4").style.height = "";
+                document.getElementById("square4").style.width = "";
+            }
+
+            if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000) {
+                document.getElementById("square5").style.height = "23px";
+                document.getElementById("square5").style.width = "23px";
+            } else {
+                document.getElementById("square5").style.height = "";
+                document.getElementById("square5").style.width = "";
+            }
+        }
+    </script>
+</body>
+</html>

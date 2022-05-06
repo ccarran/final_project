@@ -1,0 +1,94 @@
+.banner div h1 {
+    margin: 1.5em 0;
+}
+
+.line{
+    height: 20.7vh;
+    width: 1px;
+    background-color: #ad8954;
+}
+
+section div img {
+    max-width: 30vw;
+}
+.vertical_img {
+    max-width: 22vw;
+}
+
+.subtitle {
+    align-self: flex-start;
+    padding: 0;
+    font-family: 'Trirong', serif;
+    font-size: 4vw;
+    max-width: 20%;
+    text-align: right;
+}
+
+.black_section div div {
+    padding: 0;
+    flex-wrap: wrap;
+    max-width: 30%;
+}
+
+.bracket {
+    display: grid;
+    grid-template-areas: 
+        'larrow round round round rarrow'
+        'larrow white0 black0 result0 rarrow'
+        'larrow white1 black1 result1 rarrow'
+        'larrow white2 black2 result2 rarrow'
+        'larrow white3 black3 result3 rarrow'
+        'larrow white4 black4 result4 rarrow';
+    max-width: 50vw;
+    margin: 10vh auto;
+    border: 1px solid black;
+    padding: 0;
+    justify-content: initial;
+}
+.bracket > div {
+    display: block;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.bracket > div:not(.larrow, .rarrow) {
+    padding: 0.75em 0;
+}
+.bracket > div:not(.larrow, .rarrow, .round) {
+    border: 1px solid black;
+    border-bottom: 0;
+    border-right: 0;
+}
+.bracket div a {
+    z-index: 1;
+}
+.round {
+    grid-area: round;
+    background-color: #cca05f;
+    border: 1px solid black;
+    border-top: 0;
+}
+.larrow {
+    grid-area: larrow;
+    border: none;
+    padding: 7.5em 0;
+}
+.rarrow {
+    grid-area: rarrow;
+    border: none;
+    padding: 7.5em 0;
+}
+
+.white0, .black0, .result0, .result1, .result2, .result3, .result4 {
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    .bracket {
+        max-width: 70vw;
+        margin: 5vh auto;
+    }
+    .bracket > div {
+        font-size: 2.5vw;
+    }
+}

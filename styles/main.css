@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+header img {
+    background-color: white;
+    max-width: 100px;
+    width: 100%;
+    margin: 0 1em;
+}
+header nav {
+    display: flex;
+    margin-left: 5em;
+}
+header nav div {
+    margin: .75em;
+}
+header nav div a {
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+}
+header nav div a:hover {
+    color: #E8B56B;
+}
+
+.banner {
+    display: flex;
+}
+.banner div {
+    background-color: black;
+    width: 20%;
+}
+.banner div h1 {
+    color: white;
+    font-family: 'Trirong', serif;
+    font-size: 5vw;
+    padding: 0.25em;
+}
+.banner img {
+    max-width: 40%;
+}
+
+#navbar {
+    position: fixed;
+    display: none;
+    top: 30%;
+    left: 1.9vw;
+    width: 1vw;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2; 
+}
+.square {
+    width: 7px;
+    height: 7px;
+    background-color: #ad8954;
+    align-self: center;
+    transition: all 0.2s;
+}
+.square:hover {
+    width: 23px;
+}
+.line{
+    height: 10vh;
+    width: 1px;
+    background-color: #ad8954;
+}
+
+section:not(.news_section, .bracket_section) {
+    filter: grayscale(100%);
+}
+section h1 {
+    font-family: 'Trirong', serif;
+    font-size: 3.5vw;
+    text-align: center;
+    padding: 13vh 0 2vh;
+}
+section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+section div img {
+    max-width: 22vw;
+    margin: 0 3vw;
+}
+section div p {
+    font-size: 1vw;
+    max-width: 30vw;
+}
+section div p span{
+    text-decoration-line: underline;
+}
+#carlsen {
+    max-width: 30vw;
+}
+.black_section {
+    background-color: black;
+    color: white;
+}
+#players {
+    max-width: 25vw;
+}
+#organization_img {
+    max-width: 30vw;
+}
+.timer {
+    flex-direction: column;
+    padding-bottom: 0;
+}
+.timer h1 {
+    padding: 0;
+    margin: 0;
+}
+.timer h2 {
+    font-size: 4vw;
+    padding: 0.5em;
+}
+
+.news {
+    flex-direction: column;
+    max-width: 20vw;
+    padding: 0 3vw 13vh;
+    align-items: flex-start;
+}
+.news img {
+    max-width: 20vw;
+    margin: 0;
+}
+.news h3{
+    padding-top: 0.5em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5vh;
+}
+footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+footer div img {
+    max-width: 70px;
+    margin-right: 1em;
+}
+footer div p {
+    text-align: left;
+    flex-grow: 1;
+}
+footer div h3 {
+    padding: 0.4vh 0;
+    flex-grow: 1;
+}
+footer div h4 {
+    padding: 0.5vh 0;
+}
+footer div h3 {
+    margin: 0 1em;
+}
+footer div a {
+    text-decoration: none;
+    color: white;
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-out 0.3s;
+    margin: 0 1em;
+}
+footer div a:hover {
+    color: black;
+    box-shadow: inset 10vw 0 0 0 white;
+}
+.links {
+    justify-content: flex-end;
+}
+.links a {
+    margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 100%;
+    }
+    header {
+        text-align: center;
+        display: block;
+    }
+    header nav {
+        margin: 0;
+        justify-content: space-evenly;
+    }
+    
+    #navbar {
+        display: none !important; 
+    }
+
+    #logoimageleft {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    #logoimageright {
+        display: none;
+    }
+
+    #nav_list {
+        display: none;
+    } 
+
+    section {
+        width: 100%;
+        float: none;
+    }
+    section div {
+        padding: 1em;
+    }
+    section div p {
+        font-size: 2vw;
+    }
+    section h1 {
+        padding-top: 1em;
+    }
+
+    article {
+        width: 100%;
+    }
+}

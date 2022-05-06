@@ -1,0 +1,153 @@
+.banner{
+    filter: grayscale(100%);
+}
+.banner div h1 {
+    margin: 1.5em 0;
+    font-size: 4.5vw;
+}
+
+.players {
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.players div {
+    padding-bottom: 3vh;
+}
+.players div p {
+    font-size: 2em;
+}
+.players div div {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+}
+.players img {
+    max-width: 15vw;
+}
+
+.black_section img {
+    max-width: 20vw;
+}
+.black_section div {
+    padding: 2em 5em;
+}
+.black_section div div {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.black_section div div div {
+    flex-direction: row;
+    padding: 0 5em 2em;
+}
+.black_section div div div div {
+    padding: 0 2em;
+}
+.black_section ul {
+    list-style: none;
+}
+.black_section ul li {
+    padding: .5em 0;
+}
+.category {
+    width: 10vw;
+}
+.rating{
+    align-items: flex-start;
+}
+
+.white_section img {
+    max-width: 20vw;
+}
+.white_section div {
+    padding: 2em 5em;
+}
+.white_section div div {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.white_section div div div {
+    flex-direction: row;
+    padding: 0 5em 2em;
+}
+.white_section div div div div {
+    padding: 0 2em;
+}
+.white_section ul {
+    list-style: none;
+}
+.white_section ul li {
+    padding: .5em 0;
+}
+
+#cornerBtn {
+    display: none;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 5px;
+    bottom: 50px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px solid black;
+    outline: none; /* Remove outline */
+    font-weight: bold;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: .5em .5em;
+    margin: 0 1em 3px 0;
+    font-size: 200%;
+    background-color: rgba(255, 255, 255, 0.45);
+    color: black;
+    transition: all .5s;
+}
+ #cornerBtn:hover {
+    background-color: rgba(0,0,0,1);
+    color: #ad8954;
+    border: 1px solid #ad8954;
+}
+
+@media only screen and (max-width: 900px) {
+    .players {
+        padding: 0;
+    }
+
+    .players div p {
+        font-size: 1em;
+    }
+
+    .players div {
+        padding: 2vh;
+    }
+
+    .white_section div {
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+    .white_section div div {
+        padding: 0;
+    }
+    .white_section div div div {
+        padding: 1em;
+    }
+
+    .black_section div {
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+    .black_section div div {
+        padding: 0;
+    }
+    .black_section div div div {
+        padding: 1em;
+    }
+    .black_section div div div {
+        font-size: 2vw;
+    }
+
+    #cornerBtn {
+        height: 50px;
+        width: 50px;
+        font-size: 1.5em;
+    }
+}
